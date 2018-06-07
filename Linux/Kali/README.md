@@ -1,4 +1,4 @@
-# Kali Linux 2018.2 Headless
+# Kali Linux 2018.2
 
 Be sure to use the included VagrantFile for initial access with default creds.
 It will also set up ssh keys via vagrant.
