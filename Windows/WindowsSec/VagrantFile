@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Windows shared folders fails OOB for some reason
   # Since this machine is for reversing it's probably wise to leave that disabled by default anyway
   # If you need to enable it and find a solution to fix it open an issue :)
-  config.vm.guest = "3ndG4me/WindowsSec"
+  config.vm.guest = "windows"
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
   # ssh stuff, special for windows
@@ -28,7 +28,8 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "windowssec"
+  config.vm.box = "3ndG4me/WindowsSec"
+  config.vm.box_version = "1.0.0"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
